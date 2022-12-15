@@ -1,0 +1,10 @@
+{
+    "testMatch": ["**/test/*test.js", "**/test/**/*test.js", "!**/test/*pptr.test.js", "!**/test/**/*pptr.test.js"],
+    "testPathIgnorePatterns": ["/node_modules/"],
+    "testEnvironment": "jsdom",
+    "testEnvironmentOptions": {
+        "resources": "usable"
+    },
+    "setupFiles": ["./jest.setup.js"],
+    "testTimeout": 20000
+}

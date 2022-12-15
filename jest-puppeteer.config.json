@@ -1,0 +1,11 @@
+{
+    "launch": {
+        "headless": true,
+        "timeout": 20000
+    },
+    "server": {
+        "command": "npm run serve",
+        "port": 3000,
+        "launchTimeout": 20000
+    }
+}

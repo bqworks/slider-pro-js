@@ -1,0 +1,6 @@
+{
+    "preset": "jest-puppeteer",
+    "testMatch": ["**/test/*pptr.test.js", "**/test/**/*pptr.test.js"],
+    "setupFiles": ["./jest.pptr.setup.js"],
+    "testTimeout": 50000
+}

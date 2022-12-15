@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Slider Pro</title>
+
+<link rel="stylesheet" type="text/css" href="../../../src/core/slider-pro.css" media="screen"/>
+
+<style>
+body {
+	margin: 0;
+}
+
+.slider-pro {
+	margin-left: 0;
+}
+</style>
+
+<script type="module">
+	import SliderPro from '../../../src/core/slider-pro.js';
+	
+	document.addEventListener( 'DOMContentLoaded', () => {
+		new SliderPro( '#responsive-slider', {
+			width: 800,
+			height: 500
+		});
+
+		new SliderPro( '#non-responsive-slider', {
+			width: 800,
+			height: 500,
+			responsive: false
+		});
+
+		new SliderPro( '#full-width-slider', {
+			width: 500,
+			height: 300,
+			forceSize: 'fullWidth'
+		});
+
+		new SliderPro( '#full-window-slider', {
+			width: 500,
+			height: 300,
+			forceSize: 'fullWindow'
+		});
+	});
+</script>
+</head>
+
+<body>
+	<div id="responsive-slider" class="slider-pro">
+		<div class="sp-slides">
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+			</div>
+		</div>
+    </div>
+
+	<div id="non-responsive-slider" class="slider-pro">
+		<div class="sp-slides">
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+			</div>
+		</div>
+    </div>
+
+	<div id="full-width-slider" class="slider-pro">
+		<div class="sp-slides">
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+			</div>
+		</div>
+    </div>
+
+	<div id="full-window-slider" class="slider-pro">
+		<div class="sp-slides">
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

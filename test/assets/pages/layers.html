@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Slider Pro</title>
+
+<link rel="stylesheet" type="text/css" href="../../../src/core/slider-pro.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="../../../src/add-ons/layers/layers.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="../../../src/add-ons/buttons/buttons.css" media="screen"/>
+
+<script type="module">
+	import SliderPro from '../../../src/core/slider-pro.js';
+	import Buttons from '../../../src/add-ons/buttons/buttons.js';
+	import Layers from '../../../src/add-ons/layers/layers.js';
+
+	document.addEventListener( 'DOMContentLoaded', () => {
+		const slider = new SliderPro( '#my-slider', {
+			addOns: [ Buttons, Layers ],
+			width: 800,
+			height: 700,
+			waitForLayers: true
+		});
+	});
+</script>
+</head>
+
+<body>
+	<div id="my-slider" class="slider-pro">
+		<div class="sp-slides">
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+				<div data-position="topLeft" data-horizontal="100" data-vertical="100" 
+					data-show-transition="left" data-hide-transition="left"
+					data-show-delay="100" data-hide-delay="100"
+					class="sp-layer">
+					Layer 1
+				</div>
+				<div data-position="topLeft" data-horizontal="200" data-vertical="200" 
+					data-show-transition="right" data-hide-transition="right"
+					data-show-delay="200" data-hide-delay="200"
+					class="sp-layer">
+					Layer 2
+				</div>
+				<div data-position="topLeft" data-horizontal="300" data-vertical="300" 
+					data-show-transition="up" data-hide-transition="up"
+					data-show-delay="300" data-hide-delay="300"
+					class="sp-layer">
+					Layer 3
+				</div>
+				<div data-position="topLeft" data-horizontal="400" data-vertical="400" 
+					data-show-transition="bottom" data-hide-transition="bottom"
+					data-show-delay="400" data-hide-delay="400"
+					class="sp-layer">
+					Layer 4
+				</div>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+				<div data-position="topLeft" data-horizontal="100" data-vertical="100" 
+					data-show-transition="left" data-hide-transition="left"
+					data-show-delay="100" data-hide-delay="100"
+					class="sp-layer">
+					Layer 1
+				</div>
+				<div data-position="topLeft" data-horizontal="200" data-vertical="200" 
+				data-show-transition="right" data-hide-transition="right"
+					data-show-delay="200" data-hide-delay="200"
+					class="sp-layer">
+					Layer 2
+				</div>
+				<div data-position="topLeft" data-horizontal="300" data-vertical="300" 
+					data-show-transition="up" data-hide-transition="up"
+					data-show-delay="300" data-hide-delay="300"
+					class="sp-layer">
+					Layer 3
+				</div>
+				<div data-position="topLeft" data-horizontal="400" data-vertical="400" 
+					data-show-transition="bottom" data-hide-transition="bottom"
+					data-show-delay="400" data-hide-delay="400"
+					class="sp-layer">
+					Layer 4
+				</div>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+				<div data-position="topLeft" data-horizontal="100" data-vertical="100" 
+					data-show-transition="left" data-hide-transition="left"
+					data-show-delay="100" data-hide-delay="100"
+					class="sp-layer sp-static">
+					Layer 1
+				</div>
+				<div data-position="topLeft" data-horizontal="200" data-vertical="200" 
+				data-show-transition="right" data-hide-transition="right"
+					data-show-delay="200" data-hide-delay="200"
+					class="sp-layer sp-static">
+					Layer 2
+				</div>
+				<div data-position="topLeft" data-horizontal="300" data-vertical="300" 
+					data-show-transition="up" data-hide-transition="up"
+					data-show-delay="300" data-hide-delay="300"
+					class="sp-layer sp-static">
+					Layer 3
+				</div>
+				<div data-position="topLeft" data-horizontal="400" data-vertical="400" 
+					data-show-transition="bottom" data-hide-transition="bottom"
+					data-show-delay="400" data-hide-delay="400"
+					class="sp-layer sp-static">
+					Layer 4
+				</div>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+				<div data-position="topLeft" data-horizontal="100" data-vertical="100" 
+					data-show-transition="left" data-hide-transition="left"
+					data-show-delay="100" data-hide-delay="100"
+					class="sp-layer">
+					Layer 1
+				</div>
+				<div data-position="topLeft" data-horizontal="200" data-vertical="200" 
+				data-show-transition="right" data-hide-transition="right"
+					data-show-delay="200" data-hide-delay="200"
+					class="sp-layer">
+					Layer 2
+				</div>
+				<div data-position="topLeft" data-horizontal="300" data-vertical="300" 
+					data-show-transition="up" data-hide-transition="up"
+					data-show-delay="300" data-hide-delay="300"
+					class="sp-layer">
+					Layer 3
+				</div>
+				<div data-position="topLeft" data-horizontal="400" data-vertical="400" 
+					data-show-transition="bottom" data-hide-transition="bottom"
+					data-show-delay="400" data-hide-delay="400"
+					class="sp-layer">
+					Layer 4
+				</div>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+				<div data-position="topLeft" data-horizontal="100" data-vertical="100" 
+					data-show-transition="left" data-hide-transition="left"
+					data-show-delay="100" data-hide-delay="100"
+					class="sp-layer">
+					Layer 1
+				</div>
+				<div data-position="topLeft" data-horizontal="200" data-vertical="200" 
+				data-show-transition="right" data-hide-transition="right"
+					data-show-delay="200" data-hide-delay="200"
+					class="sp-layer">
+					Layer 2
+				</div>
+				<div data-position="topLeft" data-horizontal="300" data-vertical="300" 
+					data-show-transition="up" data-hide-transition="up"
+					data-show-delay="300" data-hide-delay="300"
+					class="sp-layer">
+					Layer 3
+				</div>
+				<div data-position="topLeft" data-horizontal="400" data-vertical="400" 
+					data-show-transition="bottom" data-hide-transition="bottom"
+					data-show-delay="400" data-hide-delay="400"
+					class="sp-layer">
+					Layer 4
+				</div>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

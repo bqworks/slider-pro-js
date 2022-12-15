@@ -1,0 +1,231 @@
+/* Thumbnails
+-------------------------------------------------- */
+.sp-thumbnails-container {
+	position: relative;
+	overflow: hidden;
+	direction: ltr;
+}
+
+.sp-top-thumbnails,
+.sp-bottom-thumbnails {
+	left: 0;
+	margin: 0 auto;
+}
+
+.sp-top-thumbnails {
+	position: absolute;
+	top: 0;
+	margin-bottom: 4px;
+}
+
+.sp-bottom-thumbnails {
+	margin-top: 4px;
+}
+
+.sp-left-thumbnails,
+.sp-right-thumbnails {
+	position: absolute;
+	top: 0;
+}
+
+.sp-right-thumbnails {
+	right: 0;
+	margin-left: 4px;
+}
+
+.sp-left-thumbnails {
+	left: 0;
+	margin-right: 4px;
+}
+
+.sp-thumbnails {
+	position: relative;
+}
+
+.sp-thumbnail {
+	border: none;
+}
+
+.sp-thumbnail-container {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	float: left;
+	box-sizing: border-box;
+}
+
+.sp-rtl .sp-thumbnail-container {
+	float: right;
+}
+
+/* Horizontal thumbnails
+------------------------ */
+.sp-top-thumbnails .sp-thumbnail-container,
+.sp-bottom-thumbnails .sp-thumbnail-container {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.sp-top-thumbnails .sp-thumbnail-container:first-child,
+.sp-bottom-thumbnails .sp-thumbnail-container:first-child {
+	margin-left: 0;
+}
+
+.sp-top-thumbnails .sp-thumbnail-container:last-child,
+.sp-bottom-thumbnails .sp-thumbnail-container:last-child {
+	margin-right: 0;
+}
+
+/* Vertical thumbnails
+---------------------- */
+.sp-left-thumbnails .sp-thumbnail-container,
+.sp-right-thumbnails .sp-thumbnail-container {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.sp-left-thumbnails .sp-thumbnail-container:first-child,
+.sp-right-thumbnails .sp-thumbnail-container:first-child {
+	margin-top: 0;
+}
+
+.sp-left-thumbnails .sp-thumbnail-container:last-child,
+.sp-right-thumbnails .sp-thumbnail-container:last-child {
+	margin-bottom: 0;
+}
+
+/* Right thumbnails with pointer
+-------------------------------- */
+.sp-right-thumbnails.sp-has-pointer {
+	margin-left: -13px;
+}
+
+.sp-right-thumbnails.sp-has-pointer .sp-thumbnail {
+	position: absolute;
+	left: 18px;
+	margin-left: 0 !important;
+}
+
+.sp-right-thumbnails.sp-has-pointer .sp-selected-thumbnail::before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	border-left: 5px solid #f00;
+	left: 0;
+	top: 0;
+	margin-left: 13px;
+}
+
+.sp-right-thumbnails.sp-has-pointer .sp-selected-thumbnail::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0;
+	top: 50%;
+	margin-top: -8px;
+	border-right: 13px solid #f00;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+}
+
+/* Left thumbnails with pointer
+------------------------------- */
+.sp-left-thumbnails.sp-has-pointer {
+	margin-right: -13px;
+}
+
+.sp-left-thumbnails.sp-has-pointer .sp-thumbnail {
+	position: absolute;
+	right: 18px;
+}
+
+.sp-left-thumbnails.sp-has-pointer .sp-selected-thumbnail::before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	border-left: 5px solid #f00;
+	right: 0;
+	top: 0;
+	margin-right: 13px;
+}
+
+.sp-left-thumbnails.sp-has-pointer .sp-selected-thumbnail::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	right: 0;
+	top: 50%;
+	margin-top: -8px;
+	border-left: 13px solid #f00;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+}
+
+/* Bottom thumbnails with pointer
+--------------------------------- */
+.sp-bottom-thumbnails.sp-has-pointer {
+	margin-top: -13px;
+}
+
+.sp-bottom-thumbnails.sp-has-pointer .sp-thumbnail {
+	position: absolute;
+	top: 18px;
+	margin-top: 0 !important;
+}
+
+.sp-bottom-thumbnails.sp-has-pointer .sp-selected-thumbnail::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	border-bottom: 5px solid #f00;
+	top: 0;
+	margin-top: 13px;
+}
+
+.sp-bottom-thumbnails.sp-has-pointer .sp-selected-thumbnail::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 50%;
+	top: 0;
+	margin-left: -8px;
+	border-bottom: 13px solid #f00;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+}
+
+/* Top thumbnails with pointer
+------------------------------ */
+.sp-top-thumbnails.sp-has-pointer {
+	margin-bottom: -13px;
+}
+
+.sp-top-thumbnails.sp-has-pointer .sp-thumbnail {
+	position: absolute;
+	bottom: 18px;
+}
+
+.sp-top-thumbnails.sp-has-pointer .sp-selected-thumbnail::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	border-bottom: 5px solid #f00;
+	bottom: 0;
+	margin-bottom: 13px;
+}
+
+.sp-top-thumbnails.sp-has-pointer .sp-selected-thumbnail::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 50%;
+	bottom: 0;
+	margin-left: -8px;
+	border-top: 13px solid #f00;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+}

@@ -1,0 +1,41 @@
+/* Core
+-------------------------------------------------- */
+.slider-pro {
+	position: relative;
+	margin: 0 auto;
+	box-sizing: content-box;
+}
+
+.sp-slides-container {
+	position: relative;
+}
+
+.sp-mask {
+	position: relative;
+	overflow: hidden;
+}
+
+.sp-slides {
+	position: relative;
+	backface-visibility: hidden;
+	perspective: 1000;
+}
+
+.sp-slide {
+	position: absolute;
+}
+
+.sp-image-container {
+	overflow: hidden;
+}
+
+.sp-image {
+	position: relative;
+	display: block;
+	border: none;
+}
+
+.sp-no-js {
+	overflow: hidden;
+	max-width: 100%;
+}

@@ -1,0 +1,29 @@
+/* Layers
+-------------------------------------------------- */
+.sp-layer {
+	position: absolute;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: subpixel-antialiased;
+	backface-visibility: hidden;
+}
+
+.sp-black {
+	color: #fff;
+	background: rgb(0 0 0);
+	background: rgb(0 0 0 / 70%);
+}
+
+.sp-white {
+	color: #000;
+	background: rgb(255 255 255);
+	background: rgb(255 255 255 / 70%);
+}
+
+.sp-rounded {
+	border-radius: 10px;
+}
+
+.sp-padding {
+	padding: 10px;
+}

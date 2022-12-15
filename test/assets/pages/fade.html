@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Slider Pro</title>
+
+<link rel="stylesheet" type="text/css" href="../../../src/core/slider-pro.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="../../../src/add-ons/buttons/buttons.css" media="screen"/>
+
+<script type="module">
+	import SliderPro from '../../../src/core/slider-pro.js';
+	import Buttons from '../../../src/add-ons/buttons/buttons.js';
+	import Fade from '../../../src/add-ons/fade/fade.js';
+
+	document.addEventListener( 'DOMContentLoaded', () => {
+		const slider = new SliderPro( '#my-slider', {
+			addOns: [ Buttons, Fade ],
+			width: '100vw',
+			height: '100vh',
+			fade: true
+		});
+	});
+</script>
+</head>
+
+<body>
+	<div id="my-slider" class="slider-pro">
+		<div class="sp-slides">
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

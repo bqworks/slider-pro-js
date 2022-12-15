@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Slider Pro</title>
+
+<link rel="stylesheet" type="text/css" href="../../../src/core/slider-pro.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="../../../src/add-ons/caption/caption.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="../../../src/add-ons/buttons/buttons.css" media="screen"/>
+
+<script type="module">
+	import SliderPro from '../../../src/core/slider-pro.js';
+	import Caption from '../../../src/add-ons/caption/caption.js';
+	import Buttons from '../../../src/add-ons/buttons/buttons.js';
+
+	document.addEventListener( 'DOMContentLoaded', () => {
+		const slider = new SliderPro( '#my-slider', {
+			addOns: [ Caption, Buttons ],
+			width: '100vw',
+			height: '100vh'
+		});
+	});
+</script>
+</head>
+
+<body>
+	<div id="my-slider" class="slider-pro">
+		<div class="sp-slides">
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+				<div class="sp-caption">Caption 1</div>>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+				<div class="sp-caption">Caption 2</div>>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+				<div class="sp-caption">Caption 4</div>>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+				<div class="sp-caption">Caption 6</div>>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+				<div class="sp-caption">Caption 7</div>>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+				<div class="sp-caption">Caption 8</div>>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+				<div class="sp-caption">Caption 9</div>>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"/>
+				<div class="sp-caption">Caption 10</div>>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

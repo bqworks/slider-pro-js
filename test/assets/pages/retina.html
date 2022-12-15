@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Slider Pro</title>
+
+<link rel="stylesheet" type="text/css" href="../../../src/core/slider-pro.css" media="screen"/>
+
+<script type="module">
+	import SliderPro from '../../../src/core/slider-pro.js';
+	import Retina from '../../../src/add-ons/retina/retina.js';
+
+	document.addEventListener( 'DOMContentLoaded', () => {
+		const slider = new SliderPro( '#my-slider', {
+			addOns: [ Retina ],
+			width: '100vw',
+			height: '100vh'
+		});
+	});
+</script>
+</head>
+
+<body>
+	<div id="my-slider" class="slider-pro">
+		<div class="sp-slides">
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"
+					data-retina="../images/large.gif"/>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"
+					data-retina="../images/large.gif"/>
+			</div>
+			<div class="sp-slide">
+				<img class="sp-image" src="../images/default.gif"
+					data-retina="../images/large.gif"/>
+			</div>
+		</div>
+    </div>
+</body>
+</html>
