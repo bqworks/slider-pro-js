@@ -245,7 +245,7 @@ destroy() | Destroys a slider by removing all the visual elements and functional
 ```javascript
 // instantiate the slider and set a few options
 const mySlider = new SliderPro( '#my-slider', {
-	autoSlideSize: true
+	autoSlideSize: true,
 	loop: false
 });
 
@@ -273,7 +273,7 @@ gotoSlideComplete | Triggered when the animation to the new slide is completed.<
 ```javascript
 // instantiate the slider and set a few options
 const mySlider = new SliderPro( '#my-slider', {
-	autoSlideSize: true
+	autoSlideSize: true,
 	loop: false
 });
 
@@ -654,7 +654,7 @@ __Customizable properties:__ [autoplay](#autoplay), [autoplayDelay](#autoplaydel
 
 Adds touch-swipe functionality for the slides. The module also adds mouse drag functionality on non-touch screen devices.
 
-__Customizable properties:____ [touchSwipe](#touchswipe) and [touchSwipeThreshold](#touchswipethreshold).
+__Customizable properties:__ [touchSwipe](#touchswipe) and [touchSwipeThreshold](#touchswipethreshold).
 
 ---
 
@@ -662,7 +662,7 @@ __Customizable properties:____ [touchSwipe](#touchswipe) and [touchSwipeThreshol
 
 Adds navigation buttons below the slider.
 
-Customizable properties:__ [buttons](#buttons).
+__Customizable properties:__ [buttons](#buttons).
 
 ---
 
