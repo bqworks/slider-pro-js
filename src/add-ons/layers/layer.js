@@ -104,7 +104,7 @@ class Layer {
         this.horizontalPosition = typeof this.data.horizontal !== 'undefined' ? this.data.horizontal : 0;
         this.verticalPosition = typeof this.data.vertical !== 'undefined' ? this.data.vertical : 0;
 
-        // Set the horizontal position of the layer sliderd on the data set
+        // Set the horizontal position of the layer based on the data set
         if ( this.horizontalProperty === 'center' ) {
 			
             // prevent content wrapping while setting the width
@@ -121,7 +121,7 @@ class Layer {
             this.layerEl.style[ this.horizontalProperty ] = resolveUnit( this.horizontalPosition );
         }
 
-        // Set the vertical position of the layer sliderd on the data set
+        // Set the vertical position of the layer based on the data set
         if ( this.verticalProperty === 'center' ) {
 
             // prevent content wrapping while setting the height
