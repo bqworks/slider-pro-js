@@ -235,7 +235,7 @@ class Layers {
     // Destroy the module
     destroy() {
         this.slider.removeEventListener( 'update.' + this.namespace );
-        this.slider.removeEventListener( 'sliderResize.' + this.namespace );
+        this.slider.removeEventListener( 'resize.' + this.namespace );
         this.slider.removeEventListener( 'gotoSlide.' + this.namespace );
         this.slider.removeEventListener( 'hideLayersForSlideComplete' );
 
