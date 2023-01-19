@@ -1,7 +1,7 @@
 class Autoplay {
 
     // The namespace to be used when adding event listeners
-    namespace = 'arrows';
+    namespace = 'autoplay';
 
     // Reference to the base slider instance
     slider;
