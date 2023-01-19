@@ -84,7 +84,7 @@ class LazyLoading {
         }
 
         // Use either the middle position or the index of the selected slide as a reference, depending on
-        // whether the slider is loopable
+        // whether the slider is loop-able
         const referencePosition = this.slider.settings.loop === true ? middleSlidePosition : this.slider.selectedSlideIndex,
 
             // Calculate how many slides are visible at the sides of the selected slide
