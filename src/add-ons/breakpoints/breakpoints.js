@@ -38,7 +38,7 @@ class Breakpoints {
         this.originalSettings = { ...this.slider.settings };
 
         // Parse the breakpoints object and store the values into an array,
-        // sorting them in ascending order sliderd on the specified size.
+        // sorting them in ascending order based on the specified size.
         for ( let sizes in this.breakpoints ) {
             this.orderedBreakpoints.push({ 
                 size: parseInt( sizes, 10 ),
