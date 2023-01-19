@@ -82,7 +82,7 @@ class DeepLinking {
         return false;
     }
 
-    // Navigate to the appropriate slide, sliderd on the specified hash
+    // Navigate to the appropriate slide, based on the specified hash
     gotoHash( hash ) {
         const parsedHash = this.parseHash( hash );
 		
@@ -96,7 +96,7 @@ class DeepLinking {
 
         // check if the specified slide id is a number or string
         if ( isNaN( slideIdNumber ) ) {
-            // get the index of the slide sliderd on the specified id
+            // get the index of the slide based on the specified id
             const slideEl = document.getElementById( slideId );
             const slideIndex = Array.from( this.slider.sliderEl.getElementsByClassName( 'sp-slide') ).indexOf( slideEl );
 
