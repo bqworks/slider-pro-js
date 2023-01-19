@@ -192,7 +192,7 @@ class Layers {
                     layerCounter++;
 
                     if ( layerCounter === animatedLayers.length ) {
-                        this.slider.dispatchEvent( { type: 'showLayersForSlideComplete', index: index } );
+                        this.slider.dispatchEvent( 'showLayersForSlideComplete', { index: index } );
                     }
                 });
             }
