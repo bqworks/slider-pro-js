@@ -44,6 +44,13 @@ You can either load the minimized JS and CSS files in your HTML or you can impor
 <script type="text/javascript" src="slider-pro-js/build/slider-pro.js"></script>
 ```
 
+From unpkg.com:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/slider-pro-js/build/slider-pro.css"/>
+<script type="text/javascript" src="https://unpkg.com/slider-pro-js/build/slider-pro.js"></script>
+```
+
 Alternatively you can import the slider's core and each add-on from the `slider-pro-js` package.
 
 ```js
