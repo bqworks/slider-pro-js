@@ -140,9 +140,9 @@ The files from the packages's `build` folder, by default, will include all the s
 
 * [JavaScript API](#1-core-options)
 	* [1. Core options](#1-core-options)
-	* [2. Add-on options](#1-add-on-options)
-	* [3. Public Methods](#2-public-methods)
-	* [4. Events](#3-events)
+	* [2. Add-on options](#2-add-on-options)
+	* [3. Public Methods](#3-public-methods)
+	* [4. Events](#4-events)
 * [Add-ons](#add-ons)
 	* [1. Breakpoints](#1-breakpoints)
 	* [2. Fade](#2-fade)
@@ -244,7 +244,8 @@ getSelectedSlide() | Gets the index of the selected slide.
 getTotalSlides() | Gets the total number of slides.
 update() | This is called by the plugin automatically when a property is changed. You can call this manually in order to refresh the slider after changing its HTML markup (i.e., adding or removing slides).
 resize() | This is called by the plugin automatically when the slider changes its size. You can also call it manually if you find it necessary to have the slider resize itself.
-addEventListener( type, handler ) | Adds an event listener to the slider. removeEventListener( type ) | Removes an event listener from the slider.
+addEventListener( type, handler ) | Adds an event listener to the slider.
+removeEventListener( type ) | Removes an event listener from the slider.
 destroy() | Destroys a slider by removing all the visual elements and functionality added by the plugin. Basically, it leaves the slider in the state it was before the plugin was instantiated.
 
 *Example:*
@@ -325,6 +326,7 @@ const mySlider = new SliderPro( '#my-slider', {
 	}
 });
 ```
+
 ---
 
 ### 2. Fade ###
@@ -818,7 +820,7 @@ When using the second method, the videos will need to have the `api=1` parameter
 *Example 2:*
 
 ```html
-<iframe class="sp-video" src="https://player.vimeo.com/video/109354891?api=1" width="500" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe class="sp-video" src="https://player.vimeo.com/video/109354891?api=1" width="500" height="300" frameborder="0" allowfullscreen></iframe>
 ```
 
 ##### HTML5 #####
