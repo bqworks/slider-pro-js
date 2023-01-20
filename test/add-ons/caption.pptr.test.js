@@ -24,10 +24,12 @@ describe( 'caption add-on (puppeteer)', () => {
     beforeAll( async () => {
         await page.setViewport( { width: 1024, height: 768 } );
         await page.goto( global.BASE_URL + 'caption.html');
+        await page.waitForTimeout( 1000 );
     });
 
     test( 'should display the caption corresponding to the selected slide when the captions are faded', async () => {
-        let index = 1;
+        const totalSlides = 10;
+        let index = Math.round( Math.random() * ( totalSlides - 1 ) );
 
         await gotoSlide( index );
 
@@ -38,7 +40,7 @@ describe( 'caption add-on (puppeteer)', () => {
         expect( currentCaption ).toBe( slideCaption );
 
 
-        index = 2;
+        index = Math.round( Math.random() * ( totalSlides - 1 ) );
 
         await gotoSlide( index );
 
@@ -49,7 +51,7 @@ describe( 'caption add-on (puppeteer)', () => {
         expect( currentCaption ).toBe( slideCaption );
 
 
-        index = 3;
+        index = Math.round( Math.random() * ( totalSlides - 1 ) );
 
         await gotoSlide( index );
 
