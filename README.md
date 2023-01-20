@@ -1,3 +1,9 @@
+[![npm version](https://img.shields.io/npm/v/slider-pro-js)](https://www.npmjs.com/package/slider-pro-js)
+[![License](https://img.shields.io/github/license/bqworks/slider-pro-js)](https://github.com/bqworks/slider-pro-js/blob/master/LICENSE)
+[![Build](https://github.com/bqworks/slider-pro-js/actions/workflows/build.yml/badge.svg)](https://github.com/bqworks/slider-pro-js/actions/workflows/build.yml)
+[![Tests](https://github.com/bqworks/slider-pro-js/actions/workflows/test.yml/badge.svg)](https://github.com/bqworks/slider-pro-js/actions/workflows/test.yml)
+[![Downloads](https://img.shields.io/npm/dt/slider-pro-js)](https://github.com/bqworks/slider-pro-js)
+
 # Slider Pro JS #
 
 A modular JavaScript slider that is __dependency-free__, __rich-featured__, __flexible__ and __easy to use__. 
