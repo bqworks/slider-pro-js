@@ -33,5 +33,6 @@
             "error",
             "always"
         ]
-    }
+    },
+    "ignores": ["node_modules", "build"]
 }
