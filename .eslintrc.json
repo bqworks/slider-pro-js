@@ -34,5 +34,5 @@
             "always"
         ]
     },
-    "ignores": ["node_modules", "build"]
+    "ignorePatterns": ["node_modules", "build"]
 }
