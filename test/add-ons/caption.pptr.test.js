@@ -15,7 +15,9 @@ async function getCaptionForSlide( index ) {
 async function gotoSlide( index ) {
     await page.click( `.sp-button:nth-child(${ index + 1 })` );
 
-    await page.waitForTimeout( 1000 );
+    await new Promise((resolve) => { 
+        setTimeout(resolve, 1000);
+    });
 
     return;
 }
@@ -24,7 +26,10 @@ describe( 'caption add-on (puppeteer)', () => {
     beforeAll( async () => {
         await page.setViewport( { width: 1024, height: 768 } );
         await page.goto( global.BASE_URL + 'caption.html');
-        await page.waitForTimeout( 1000 );
+        
+        await new Promise((resolve) => { 
+            setTimeout(resolve, 1000);
+        });
     });
 
     test( 'should display the caption corresponding to the selected slide when the captions are faded', async () => {
@@ -72,7 +77,9 @@ describe( 'caption add-on (puppeteer)', () => {
 
         expect( currentCaption ).not.toBe( slideCaption );
 
-        await page.waitForTimeout( 1000 );
+        await new Promise((resolve) => { 
+        setTimeout(resolve, 1000);
+    });
 
         currentCaption = await page.$eval( '.sp-caption-container', captionEl => captionEl.textContent );
 

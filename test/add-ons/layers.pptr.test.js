@@ -5,7 +5,9 @@ describe( 'layers add-on', () => {
     });
 
     test( 'should have the layers visible for the initial slide', async () => {
-        await page.waitForTimeout( 500 );
+        await new Promise((resolve) => { 
+        setTimeout(resolve, 500);
+    });
 
         const layersVisibility = await page.$$eval( '.sp-selected .sp-layer', layersEl => layersEl.map( layerEl => layerEl.style.visibility !== undefined && layerEl.style.visibility !== 'hidden' ? true : false ) );
 
@@ -37,7 +39,9 @@ describe( 'layers add-on', () => {
 
         expect( selectedSlideIndex ).not.toBe( index );
 
-        await page.waitForTimeout( 2000 );
+        await new Promise((resolve) => { 
+        setTimeout(resolve, 2000);
+    });
 
         selectedSlideIndex = await page.$eval( '.sp-slide.sp-selected', slideEl => parseInt( slideEl.getAttribute( 'data-index' ) ) );
 

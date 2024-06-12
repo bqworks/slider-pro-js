@@ -16,7 +16,9 @@ describe( 'touch swipe add-on (puppeteer)', () => {
 
         expect( finalSelectedIndex ).toBe( initialSelectedIndex + 1 );
 
-        await page.waitForTimeout( 1100 );
+        await new Promise((resolve) => { 
+        setTimeout(resolve, 1100);
+    });
 
         initialSelectedIndex = await page.$eval( '.sp-slide.sp-selected', slideEl => parseInt( slideEl.getAttribute( 'data-index' ) ) );
 

@@ -16,7 +16,9 @@ describe( 'example 2', () => {
 
         for ( let i = 0; i < totalSlides; i++ ) {
             await page.click( `.sp-button:nth-child(${ i + 1 })` );
-            await page.waitForTimeout( 1000 );
+            await new Promise((resolve) => { 
+        setTimeout(resolve, 1000);
+    });
         }
 
         const isLastSlideSelected = await page.$eval( `.sp-slide:nth-child(${ totalSlides })`, slideEl => slideEl.classList.contains( 'sp-selected' ) );
@@ -42,7 +44,9 @@ describe( 'example 2', () => {
             await page.mouse.down();
             await page.mouse.move( 200, 100, { steps: 20 } );
             await page.mouse.up();
-            await page.waitForTimeout( 2000 );
+            await new Promise((resolve) => { 
+        setTimeout(resolve, 2000);
+    });
 
             let finalSelectedIndex = await page.$eval( '.sp-slide.sp-selected', slideEl => parseInt( slideEl.getAttribute( 'data-index' ) ) );
 

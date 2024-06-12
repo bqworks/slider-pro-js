@@ -19,7 +19,9 @@ describe( 'lazy-loading add-on', () => {
     test( 'should load the images in the selected slide and nearby slides after navigating to a slide', async () => {
         await page.click( '.sp-button:nth-child(5)' );
 
-        await page.waitForTimeout( 100 );
+        await new Promise((resolve) => { 
+        setTimeout(resolve, 2000);
+    });
 
         const imagesSources = await page.$$eval( '.sp-image', imagesEl => imagesEl.map( imageEl => imageEl.getAttribute( 'src' ) ) );
 

@@ -10,7 +10,9 @@ describe( 'example 5', () => {
 
         for ( let i = 0; i < totalSlides; i++ ) {
             await page.click( `.sp-thumbnail-container:nth-child(${ i + 1 })` );
-            await page.waitForTimeout( 1000 );
+            await new Promise((resolve) => { 
+        setTimeout(resolve, 1000);
+    });
         }
 
         const isLastSlideSelected = await page.$eval( `.sp-slide:nth-child(${ totalSlides })`, slideEl => slideEl.classList.contains( 'sp-selected' ) );
@@ -20,7 +22,9 @@ describe( 'example 5', () => {
 
     test( 'should resize the slider and apply the breakpoint', async () => {
         await page.setViewport( { width: 700, height: 700 } );
-        await page.waitForTimeout( 500 );
+        await new Promise((resolve) => { 
+        setTimeout(resolve, 500);
+    });
 
         const thumbnailSize = await page.$eval( '.sp-thumbnail-container', ( thumbnailEl ) => {
             return { width: thumbnailEl.clientWidth, height: thumbnailEl.clientHeight };
@@ -34,7 +38,9 @@ describe( 'example 5', () => {
 
         for ( let i = totalSlides - 1; i >= 1; i-- ) {
             await page.click( '.sp-previous-arrow' );
-            await page.waitForTimeout( 1000 );
+            await new Promise((resolve) => { 
+        setTimeout(resolve, 1000);
+    });
         }
 
         const isFirstSlideSelected = await page.$eval( '.sp-slide:nth-child(1)', slideEl => slideEl.classList.contains( 'sp-selected' ) );
@@ -44,7 +50,9 @@ describe( 'example 5', () => {
 
     test( 'should resize the slider and apply the breakpoint', async () => {
         await page.setViewport( { width: 400, height: 400 } );
-        await page.waitForTimeout( 500 );
+        await new Promise((resolve) => { 
+        setTimeout(resolve, 500);
+    });
 
         const thumbnailSize = await page.$eval( '.sp-thumbnail-container', ( thumbnailEl ) => {
             return { width: thumbnailEl.clientWidth, height: thumbnailEl.clientHeight };
@@ -65,7 +73,9 @@ describe( 'example 5', () => {
 
         expect( finalSelectedIndex ).toBe( initialSelectedIndex + 1 );
 
-        await page.waitForTimeout( 1100 );
+        await new Promise((resolve) => { 
+        setTimeout(resolve, 1100);
+    });
 
         initialSelectedIndex = await page.$eval( '.sp-slide.sp-selected', slideEl => parseInt( slideEl.getAttribute( 'data-index' ) ) );
 
@@ -76,7 +86,9 @@ describe( 'example 5', () => {
 
         finalSelectedIndex = await page.$eval( '.sp-slide.sp-selected', slideEl => parseInt( slideEl.getAttribute( 'data-index' ) ) );
 
-        await page.waitForTimeout( 1100 );
+        await new Promise((resolve) => { 
+        setTimeout(resolve, 1100);
+    });
 
         expect( finalSelectedIndex ).toBe( initialSelectedIndex - 1 );
     });

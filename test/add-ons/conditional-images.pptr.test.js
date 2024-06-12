@@ -20,7 +20,9 @@ describe( 'conditional images add-on', () => {
         await page.setViewport( { width: 400, height: 300 } );
 
         // wait for the 'resize' event to be dispatched after the delay (default: 200ms)
-        await page.waitForTimeout( 500 );
+        await new Promise((resolve) => { 
+        setTimeout(resolve, 500);
+    });
 
         const imagesSources = await page.$$eval( '.sp-image', imagesEl => imagesEl.map( imageEl => imageEl.getAttribute( 'src' ) ) );
 
@@ -33,7 +35,9 @@ describe( 'conditional images add-on', () => {
         await page.setViewport( { width: 1400, height: 700 } );
 
         // wait for the 'resize' event to be dispatched after the delay (default: 200ms)
-        await page.waitForTimeout( 500 );
+        await new Promise((resolve) => { 
+        setTimeout(resolve, 500);
+    });
 
         const imagesSources = await page.$$eval( '.sp-image', imagesEl => imagesEl.map( imageEl => imageEl.getAttribute( 'src' ) ) );
 

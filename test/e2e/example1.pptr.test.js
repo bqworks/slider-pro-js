@@ -24,7 +24,9 @@ describe( 'example 1', () => {
 
         for ( let i = 0; i < totalSlides; i++ ) {
             await page.click( `.sp-thumbnail-container:nth-child(${ i + 1 })` );
-            await page.waitForTimeout( 2000 );
+            await new Promise((resolve) => { 
+        setTimeout(resolve, 2000);
+    });
         }
 
         const isLastSlideSelected = await page.$eval( `.sp-slide:nth-child(${ totalSlides })`, slideEl => slideEl.classList.contains( 'sp-selected' ) );
@@ -34,7 +36,9 @@ describe( 'example 1', () => {
 
     test( 'should resize the slider when the viewport size is smaller than the slider size', async () => {
         await page.setViewport( { width: 400, height: 300 } );
-        await page.waitForTimeout( 500 );
+        await new Promise((resolve) => { 
+        setTimeout(resolve, 500);
+    });
 
         let sliderWidth = await page.$eval( '.slider-pro', sliderEl => sliderEl.clientWidth );
 
@@ -59,7 +63,9 @@ describe( 'example 1', () => {
             await page.mouse.down();
             await page.mouse.move( 200, 100, { steps: 20 } );
             await page.mouse.up();
-            await page.waitForTimeout( 2000 );
+            await new Promise((resolve) => { 
+        setTimeout(resolve, 2000);
+    });
 
             let finalSelectedIndex = await page.$eval( '.sp-slide.sp-selected', slideEl => parseInt( slideEl.getAttribute( 'data-index' ) ) );
 

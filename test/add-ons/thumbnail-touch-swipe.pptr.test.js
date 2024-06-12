@@ -2,7 +2,9 @@ describe( 'thumbnail touch swipe add-on (puppeteer)', () => {
     beforeAll( async () => {
         await page.goto( global.BASE_URL + 'thumbnail-touch-swipe.html');
         await page.setViewport( { width: 1024, height: 768 } );
-        await page.waitForTimeout( 500 );
+        await new Promise((resolve) => { 
+        setTimeout(resolve, 500);
+    });
     });
 
     test( 'should move the thumbnails on mouse drag', async () => {

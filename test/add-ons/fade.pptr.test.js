@@ -1,7 +1,9 @@
 async function gotoSlide( index ) {
     await page.click( `.sp-button:nth-child(${ index + 1 })` );
 
-    await page.waitForTimeout( 1000 );
+    await new Promise((resolve) => { 
+        setTimeout(resolve, 1000);
+    });
 
     return;
 }
