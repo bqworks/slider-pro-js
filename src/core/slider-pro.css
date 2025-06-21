@@ -16,7 +16,7 @@
 .sp-slides {
 	position: relative;
 	backface-visibility: hidden;
-	perspective: 1000;
+	perspective: 1000px;
 }
 
 .sp-slide {
