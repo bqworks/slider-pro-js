@@ -3,7 +3,7 @@ on: [push, workflow_dispatch]
 jobs:
   build:
     name: Run tests
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Add files
         uses: actions/checkout@v4
